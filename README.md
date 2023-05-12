@@ -1,6 +1,6 @@
 # Objectiv-C
 
-This is collage project to try making C language act like objectiv languages like C++.
+This is university project to try making C language act like objectiv languages like C++.
 To achive this project should make example how to achive:
 
   1. Adding, removing objects
