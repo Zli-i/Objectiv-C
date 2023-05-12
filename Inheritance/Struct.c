@@ -1,0 +1,27 @@
+#include "Struct.h"
+
+void exampleInC()
+{
+	struct Quux dervied;
+
+	dervied.foo.a = 5;
+	dervied.c = 8;
+
+	/*std::cout << "Dervied class CppQuux have its own variable c: " << dervied.c << ",\nand inherited variable a: " << dervied.a
+		<< " from class CppFoo" << std::endl;*/
+	//std::cout << "Dervied class CppQuux have its own variable c: %d,\nand inherited variable a: %d" << std::endl;
+	printf("Dervied class Quux have its own variable c: %d,\nand inherited variable a: %d from class Foo\n", dervied.c, dervied.foo.a);
+
+	puts("");
+
+	struct Baz multiDervied;
+
+	multiDervied.foo.a = 5;
+	multiDervied.bar.b = 2;
+	multiDervied.d = 1;
+
+	printf("Dervied class Baz have its own variable c: %d,\nand inherited variable a: %d and b: %d from class Foo and Bar\n", multiDervied.d, multiDervied.foo.a, multiDervied.bar.b);
+	/*std::cout << "Dervied class CppBaz have its own variable d: " << multiDervied.d << std::endl
+		<< "and inherited variable a: " << multiDervied.a << " and b: " << multiDervied.b << " from class CppFoo and CppBar" << std::endl;*/
+	//std::cout << "Dervied class CppBaz have its own variable d: %d,\nand inherited variable a: %d and b: %d" << std::endl;
+}
