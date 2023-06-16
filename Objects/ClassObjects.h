@@ -5,6 +5,8 @@
 class Bar
 {
 public:
+	Bar() { number = 0; }
+	~Bar() {}
 	int number;
 };
 

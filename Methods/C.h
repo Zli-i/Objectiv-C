@@ -4,13 +4,13 @@
 
 struct Foo
 {
-	//float (*calculate_percentage)(int a,int b);
 	void (*Method)();
 };
 
 void Method() {
 	printf("Method \"connected\" to struct\n");
 }
+#define OVERRIDE 0
 
 void baseFunction()
 {
@@ -21,9 +21,11 @@ void overrideFunction()
 {
 	printf("Base function has been override!\n");
 }
-#define OVERRIDE 0
 
 #ifdef OVERRIDE
 #define baseFunction(x) overrideFunction(x)
 #endif
+
+
+
 void exampleInC();
